@@ -317,7 +317,7 @@ function handleSaveSort() {
     return
   }
   updateDeptSort({ deptIds: changedDeptIds.join(","), orderNums: changedOrderNums.join(",") }).then(() => {
-   proxy.$modal.msgSuccess("排序保存成功")
+   proxy.$modal.msgSuccess("排序保存成功!")
     recordOriginalOrders(deptList.value)
   })
 }
